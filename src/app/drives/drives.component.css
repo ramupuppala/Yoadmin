@@ -1,0 +1,13 @@
+#tabs{
+    border:1px solid rgb(189, 185, 185);
+    padding:0px;
+    }
+  .nav-item{
+      width:50%;
+      text-align: center;
+    }
+  .nav-tabs .nav-link.active {
+      color: white;
+      background-color: rgba(18, 86, 141, 0.5);
+      border-color: #dee2e6 #dee2e6 #fff;
+    }

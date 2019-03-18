@@ -1,0 +1,34 @@
+<!-- Author      :Rithika
+Date             :15-03-2019
+Description      : Html code for create article form with fields such as brief,body and description 
+-->
+<div class="loginForm">
+  <div class="sub-main-w3">
+    <form #f="ngForm" (ngSubmit)="onSubmit()">
+      <h2>Create Article</h2>
+      <div class="form-style-agile">
+        <input placeholder="Heading" ngModel name="heading" type="text" required="">
+      </div>
+      <div class="form-style-agile">
+        <input placeholder="Brief" name="brief" ngModel type="text" required="">
+      </div>
+      <div class="form-style-agile">
+        <textarea name="body" rows="5" placeholder="Body" ngModel id="body" style="width: 100%"></textarea>
+      </div>
+      <img [src]="url" height="200"> <br />
+      <input type='file' (change)="onSelectFile($event)">
+      <!-- checkbox -->
+      <div class="wthree-text">
+
+      </div>
+      <!-- //switch -->
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <div class="clear"></div>
+  <div class="footer">
+    <p>&copy; 2019 Yoaspire.com. All rights reserved | Design by
+      <a href="#">Yoaspire.com</a>
+    </p>
+  </div>
+</div>

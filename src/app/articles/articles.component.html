@@ -1,0 +1,59 @@
+
+<div class="container">
+ 
+  <a [routerLink]="['createarticle'] ">  <button class='create-article-btn'>Create article</button></a>
+    <button class='create-article-btn'>Deleted articles</button>
+    <div class="searchbar-holder">
+      <div class='searchbar-console flex-row'>
+        <span>
+          <input class="search-input-txt"
+            type='text'
+            name="searchUsers" (change)="onChange($event)"
+            placeholder="Search"/>
+      
+        </span>
+        <button class='search-btn site-btn' (click)="onSearch()"
+        >Search
+        </button>
+      </div>
+    </div>
+    <div class="article-card-holder " *ngFor="let article of articles">
+        <div class="article-card ">
+          <div class='flex-row article-card-topheader'>
+            <div class='img-holder'>
+              <img class='article-img' src={{article.by.image}} />
+            </div>
+            <div class='flex-column article-txt-data'>
+              <p class='article-header-txt'>{{article.heading}}</p>
+              <p class='writer'> {{article.by.first_name}} {{article.by.last_name}}</p>
+              <p class='article-brief'>{{article.brief}}</p>
+              <div class='btn-holder'>
+                <a  [routerLink]="['read']" [queryParams]="{id:article._id }">
+                  <button class="edit-btn site-btn">Read</button>
+                  </a>
+                  <a [routerLink]="['edit']" [queryParams]="{id:article._id }">
+                  <button class="edit-btn site-btn">Edit</button>
+                </a>           
+                <button data-toggle="modal" data-target="#deleteArticle">Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="deleteArticle">
+    <div class="modal-dialog">
+    <div class="modal-content">
+    
+    <div class="modal-body">
+     <h4>Do you want to delete article</h4>
+    </div>
+    
+    <div class="modal-footer">
+      <button type="button" class="btn btn-danger" >Delete</button>
+      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+    </div>
+    
+    </div>
+    </div>
+    </div>
+</div>

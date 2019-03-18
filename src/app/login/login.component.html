@@ -1,0 +1,55 @@
+
+<!-- title -->
+<div class="loginForm">
+    
+  <!-- content -->
+  <div class="sub-main-w3">
+    <form #f="ngForm" (ngSubmit)="onSubmit()">
+      <img src="images/logo.png" alt="">
+      <h2>Login Your Account</h2>
+      <div class="form-style-agile">
+        <input placeholder="Email" 
+        ngModel  
+        name="email" 
+        type="text" 
+        required=""  
+        #email="ngModel"  
+        email="true"
+        [(ngModel)]="username"
+        >
+        <!-- <h1 *ngIf="!email.valid && email.touched">Please enter the username</h1> -->
+        <div class="alert alert-warning" 
+          *ngIf="!email.valid && email.touched || passwordStatus==-1">  
+           Please enter valid Email.
+        </div>
+        
+      </div>
+   
+      <div class="form-style-agile">
+        <input placeholder="Password"
+          ngModel name="password"
+          type="password" 
+          required=""  
+          #password="ngModel"
+          [(ngModel)]="pswd"
+          >
+        <div class="alert alert-warning" 
+          *ngIf="!password.valid && password.touched">  
+          Please enter valid Password.
+        </div>
+      </div>
+      
+      <!-- <button type="submit" [disabled]="f.invalid">Sign up</button> -->
+      <input type="submit" [disabled]="!f.valid" value="Log In">
+    </form>
+  </div>
+  <div class="clear"></div>
+  <!-- //content -->
+
+  <!-- copyright -->
+  <div class="footer">
+ 
+  </div>
+  <!-- //copyright -->
+</div>
+

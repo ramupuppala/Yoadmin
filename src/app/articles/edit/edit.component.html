@@ -1,0 +1,36 @@
+<!-- Author       :Rithika
+Date              :15-03-2019
+Description       :html form  for edit article form -->
+
+<!-- title -->
+<div class="loginForm">
+
+  <!-- content -->
+  <div class="sub-main-w3">
+    <form #f="ngForm" (ngSubmit)="onSubmit()">
+
+      <h2>Edit Article</h2>
+      <!-- <div class="form-style-agile">
+        <input placeholder="Heading"  [(ngModel)]="articles.heading" readonly   type="text" required="">
+      </div> -->
+      <div class="form-style-agile">
+        <input placeholder="Brief" name="brief" ngModel [(ngModel)]="articles.brief" type="text" required="">
+      </div>
+      <div class="form-style-agile">
+        <textarea name="body" rows="5" placeholder="Body" [(ngModel)]="articles.body" ngModel id="body"
+          style="width: 100%"></textarea>
+
+      </div>
+      <!-- checkbox -->
+      <div class="wthree-text">
+
+      </div>
+      <!-- //switch -->
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <div class="clear"></div>
+  <!-- //content -->
+  <div class="footer">
+  </div>
+</div>

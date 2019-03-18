@@ -1,0 +1,122 @@
+
+                                /* card-background color */
+
+                                .card-bg{
+                                    background-color: #d3d3d3;
+                                }
+                                                            /* basic-styling for dashboard cards*/
+                                .col-md-4{
+                                 margin-left:-60px;
+                                }
+                                .card-text{
+                                    color:#3f75a1;
+                                    font-weight: bold;
+                                    font-size:20px;
+                                }
+                                .hr-users{
+                                    margin-top:-8px;
+                                    width:130%;
+                                }
+                                .hr-articles{
+                                    margin-top:-8px;
+                                    width:120%;
+                                }
+                                .hr-bulletins{
+                                    margin-top:-8px;
+                                    width:230%;
+                                }
+                                .hr-history{
+                                    margin-top:-8px;
+                                    width:100%;
+                                }
+                                .hr{
+                                    margin-top:-8px;
+                                }
+                                ul{
+                                    list-style-type: none;
+                                }
+                                .section-text{
+                                    font-family: Calibri;
+                                }
+                                .sec-height{
+                                 height:100px;
+                                }
+                                .card-list{
+                                    margin-left:100px;
+                                    font-family:Calibri;
+                                    font-weight: bold;
+                                    
+                                }
+                                .card-list-complaints{
+                                    margin-left:120px;
+                                    font-family:Calibri;
+                                    font-weight: bold; 
+                                }
+                                .card-list-left{
+                                    font-family:Calibri;
+                                    font-weight: bold;    
+                                }
+                                .sec-align{
+                                    margin-left:-20px;
+                                }
+                                .card-align{
+                                    margin-top:-18px;
+                                }
+                                                                /* manage button styling*/
+                                
+                                .manage-user{
+                                    background-color: #3f75a1;
+                                    color:white;
+                                    font-family:Calibri;
+                                    font-size:15px;  
+                                    margin-top:20px;
+                                }
+                                .manage-com{
+                                    background-color: #3f75a1;
+                                    color:white;
+                                    font-family:Calibri;
+                                    font-size:15px;  
+                                    margin-top:43px; 
+                                    float:left;
+                                    margin-left: -156px;
+                                }
+                                .manage-art{
+                                    background-color: #3f75a1;
+                                    color:white;
+                                    font-family:Calibri;
+                                    font-size:15px;  
+                                    margin-top:20px;
+                                    float:left;
+                                }
+                                .manage-bull{
+                                    background-color: #3f75a1;
+                                    color:white;
+                                    font-family:Calibri;
+                                    font-size:15px;  
+                                    margin-top:20px;
+                                }
+                                
+                                                                /* style for history  */
+                                
+                                .tr-color{
+                                 background-color:#3f75a1;
+                                 height:10px;
+                                }
+                                 tr {
+                                  color:white;
+                                  font-size:15px;
+                                }
+                                                                
+                                tr:first-child td:first-child { border-top-left-radius: 10px; }
+                                tr:first-child td:last-child { border-top-right-radius: 10px; }
+                                tr:last-child td:first-child { border-bottom-left-radius: 10px; }
+                                tr:last-child td:last-child { border-bottom-right-radius: 10px; }
+                                
+                                
+                                .articleCard {
+                                    margin-top: -190px;
+                                }
+                                
+                                .historyCard {
+                                    width:560px;
+                                }

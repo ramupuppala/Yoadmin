@@ -1,0 +1,10 @@
+
+{
+    "/api": {
+      "target": "http://13.250.235.137:8050/api",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug",
+      "pathRewrite": {"^/api" : ""}
+    }
+  }

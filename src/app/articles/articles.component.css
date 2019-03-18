@@ -1,0 +1,62 @@
+.article-card-holder .article-card {
+    padding: 0.3em 0.3em;
+    border-radius:0.3em;
+    background-color: rgba(184, 205, 221, 1);
+    margin-bottom: 1em; 
+}
+
+.article-card-holder .article-card .article-card-topheader img {
+    height: 4em;
+    width: 4em;
+    border-radius: 50%;
+    border: 2px solid rgba(18, 86, 141, 1);
+    padding: 0.1em;
+    margin-right: 0.3em;
+    align-self: center;
+    vertical-align: baseline;
+}
+
+.article-card-holder .article-card .article-card-topheader .article-txt-data .article-header-txt {
+    font-weight: bold;
+}
+
+.article-txt-data .writer,
+.article-txt-data .posting-date {
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+.article-txt-data .article-brief {
+    text-align: justify;
+    font-size: 0.9em;
+}
+
+.article-txt-data .btn-holder{
+    align-self: flex-end;
+}
+.article-txt-data .btn-holder .edit-btn,.btn-holder .read-btn{
+    margin-right: 0.5em;
+}
+.allarticle-topbar{
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	
+	margin-bottom: 0.3em;
+}
+
+.searchbar-holder{
+	width:100%;
+}
+.searchbar-holder .searchbar-console{
+	justify-content: flex-end;
+}
+.searchbar-holder .searchbar-console .search-input-txt{
+	width: 20em;
+	margin-right: 0.5em;
+}
+
+.create-article-btn{
+	width:150px;
+	margin-left:10px;
+}

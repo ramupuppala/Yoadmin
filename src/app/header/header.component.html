@@ -1,0 +1,21 @@
+<div class="yoa-admin-header">
+  <img class="logo-image" src="assets/images/yoalogo.svg" alt="" />
+  <button *ngIf="loginBtn" data-toggle="modal" data-target="#logout" class='logout-btn'>Logout</button>
+</div>
+
+<div class="modal" id="logout">
+  <div class="modal-dialog">
+  <div class="modal-content">
+  
+  <div class="modal-body">
+   <h4>Do you want to Logout</h4>
+  </div>
+  
+  <div class="modal-footer">
+    <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="doLogout()" >Logout</button>
+    <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+  </div>
+  
+  </div>
+  </div>
+  </div>

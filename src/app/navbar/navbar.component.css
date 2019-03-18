@@ -1,0 +1,22 @@
+.navbar-container{
+    background-color: rgba(18, 86, 141, 1);
+    }
+    .navbar-container .navbar{
+        color:#fff;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navbar .navbar-item {
+        text-align:center;
+    }
+    .navbar .navbar-item a{
+        color:#fff;
+    }
+    
+    .navbar .navbar-item p{
+        font-family: "Roboto";
+        font-size:0.8em;	
+    }
+    .active{
+        font-size: 20px;
+    }
